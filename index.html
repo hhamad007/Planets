@@ -6,15 +6,50 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Planets</title> 
 </head>
-<body>
-  <!-- Background image -->
-  <div>
-    <img
-      class ="object-cover w-full h-full absolute blur-[1px]"
-      src="https://images.pexels.com/photos/2312040/pexels-photo-2312040.jpeg"/>
-      <h1 class ="absolute text-6xl text-white top-1/9 left-1/2 -translate-x-1/2 -translate-y-1/2 border-7 border-yellow-500 rounded-sm font-bold font-mono">Planets</h1>
+<body class="bg-black min-h-screen flex flex-col ">
+  <main class="flex-grow grid lg:grid-cols-4 py-10 px-5" >
+    
+    <div class="border bg-yellow-400 text-center font-semibold p-6 inline-block px-10">
+      <header class="py-5">
+        <h1 class="text-4xl p-28 py-30" >Explore these Planets</h1>
+      </header>
+    </div>
+    
+    <div>
+      <a href="#" class="px-15 flex flex-col items-start rounded-2xl px-4 py-6 hover:bg-yellow-100/70">
+        <h1 class="text-orange-300 text-4xl p-10 pl-18">
+            Mars
+         </h1>
+        <img
+          class="h-60 w-60 border-5 border-double border-orange-300 rounded-md"
+          src = "https://images-assets.nasa.gov/image/PIA02653/PIA02653~large.jpg?w=1920&h=1920&fit=clip&crop=faces%2Cfocalpoint" alt = "Mars Image">
+      </a>
+    </div>
+    
 
-      <h2 class ="absolute -translate-x-1/2 -translate-y-1/2">Select a planet to explore it's wonders</h2>
-  </div>  
+    <div>
+      <a href="#" class="px-15 flex flex-col items-start rounded-2xl px-4 py-6 hover:bg-orange-100/70">
+          <h2 class="text-orange-500 text-4xl p-10 px-15">
+            Jupitar
+          </h2>
+          <img
+          class="h-60 w-60 border-5 border-double border-orange-500 rounded-md"
+          src = "https://images-assets.nasa.gov/image/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o/hubble-captures-vivid-auroras-in-jupiters-atmosphere_28000029525_o~large.jpg?w=1920&h=1913&fit=clip&crop=faces%2Cfocalpoint"
+          alt ="Jupitar Image">
+      </a>
+    </div>
+
+    <a href="#">
+      <div class="px-15 flex flex-col items-start rounded-2xl px-4 py-6 hover:bg-gray-100">
+        <h1 class="text-gray-400 text-4xl p-10 pl-15">
+          Saturn
+        </h1>
+        <img
+          class="h-60 w-60 border-5 border-double rounded-md border-gray-500"
+          src = "https://assets.science.nasa.gov/dynamicimage/assets/science/psd/photojournal/pia/pia02/pia02225/jpeg/PIA02225.jpg?w=900&h=1000&fit=clip&crop=faces%2Cfocalpoint" alt="Saturn Image">
+      </div>
+    </a>
+
+  </main>
 </body>
 </html>
